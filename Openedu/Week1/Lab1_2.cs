@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab1_1
+namespace Openedu.Week1
 {
     public class Lab1_2
     {
