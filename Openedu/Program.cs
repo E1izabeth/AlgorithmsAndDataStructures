@@ -24,7 +24,7 @@ namespace Openedu
             for (int i = 0; i < arr.Length && doWorkMethod == null; i++)
                 if (arr[i] != typeof(Program))
                     doWorkMethod = arr[i].GetMethod("Main", BindingFlags.Public | BindingFlags.Static);
-
+            //doWorkMethod = arr[3].GetMethod("Main", BindingFlags.Public | BindingFlags.Static);
             if (doWorkMethod != null)
             {
                 var doWorkToCall = CreateDelegate<Action<string[]>>(doWorkMethod);

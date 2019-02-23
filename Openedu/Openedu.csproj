@@ -49,6 +49,10 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Week1\Lab1_1.cs" />
+    <Compile Include="Week1\Lab1_2.cs" />
+    <Compile Include="Week1\Lab1_3.cs" />
+    <Compile Include="Week1\Lab1_4.cs" />
+    <Compile Include="Week1\Lab1_5.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
