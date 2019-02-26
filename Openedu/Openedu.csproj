@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Week1\IO.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Week1\Lab1_1.cs" />
@@ -53,9 +54,15 @@
     <Compile Include="Week1\Lab1_3.cs" />
     <Compile Include="Week1\Lab1_4.cs" />
     <Compile Include="Week1\Lab1_5.cs" />
+    <Compile Include="Week2\Lab2_1.cs" />
+    <Compile Include="Week2\Lab2_2.cs" />
+    <Compile Include="Week2\Lab2_3.cs" />
+    <Compile Include="Week2\Lab2_4.cs" />
+    <Compile Include="Week2\Lab2_5.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
