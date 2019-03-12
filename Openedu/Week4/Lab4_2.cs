@@ -20,7 +20,7 @@ namespace Openedu.Week4
             using (StreamWriter sw = new StreamWriter("output.txt"))
             {
                 string[] stdin = File.ReadAllLines("input.txt");
-
+                
                 int[] parameters = stdin[0].Split(' ').Select(t => int.Parse(t)).ToArray();
 
                 var queue = new Queue<long>();

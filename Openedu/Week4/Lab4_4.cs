@@ -23,8 +23,7 @@ namespace Openedu.Week4
 
                 int[] parameters = stdin[0].Split(' ').Select(t => int.Parse(t)).ToArray();
                 var queue = new Queue<int>();
-
-                var mins = new LinkedList<int>();
+                var minimums = new LinkedList<int>();
 
                 for (var i = 0; i < stdin.Length; i++)
                 {
@@ -36,29 +35,28 @@ namespace Openedu.Week4
                                 var r = int.Parse(temp[1]);
                                 queue.Enqueue(r);
 
-                                while (mins.Count > 0 && mins.First.Value > r)
+                                while (minimums.Count > 0 && minimums.First() > r)
                                 {
-                                    mins.RemoveFirst();
+                                    minimums.RemoveFirst();
                                 }
 
-                                mins.AddFirst(r);
+                                minimums.AddFirst(r);
                                 break;
                             }
                         case "-":
                             {
                                 var b = queue.Dequeue();
 
-                                if (mins.Last.Value == b)
+                                if (minimums.Last() == b)
                                 {
-                                    mins.RemoveLast();
+                                    minimums.RemoveLast();
                                 }
 
                                 break;
                             }
                         case "?":
                             {
-
-                                sw.WriteLine(mins.Last.Value);
+                                sw.WriteLine(minimums.Last());
                                 break;
                             }
                         default:

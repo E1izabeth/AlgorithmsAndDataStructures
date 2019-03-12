@@ -26,6 +26,7 @@ namespace Openedu.Week4
         }
     }
 
+
     public class QuackMachine
     {
         private ushort[] _registers = new ushort[26];
